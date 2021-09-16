@@ -1,0 +1,28 @@
+procedure to upload file from local system to git
+
+1) open browser paste this link https://git-scm.com/download/win 
+2) click on the 64-bit Git for Windows Setup. based on your machine 
+3) after dowloding click on next and finally click on install
+4) in browser search github.com click on that and register git account and create repositary in the git hub  
+5) go to your local machine  desktop in search box type git bash
+6) click on that 
+7) after opening git bash type cd and click enter (this command is used to change directory now we are in home directory)
+8) lets go in c directory right click then click on new and create folder name git project1
+9) type cd /c in git bash and click enter (now we are  in c directory)
+10) type ls in git bash and click enter (to list the folders in c directory)
+11) type cd git/ in git bash and click enter (to enter in to git folder)
+12) type ls in git bash and click enter (to list thte files in the git folder)
+13) now go to github click on repository there you will see one https link on ropository folder copy that link
+14) type git config --global user.name "Your github profile Name" in git bash and click enter (this is to configure our local machine to github)
+15) type git config --global user.email "youremail@domain.com"  in git bash and click enter  (this is to configure our local machine to github)
+16) type git clone (paste copied url in github repository)in git bash and click enter
+17) if you click on git project1 folder there you will see another folder 
+18) go to git bash and type ls and click enter (hear you will see what are the files are there in git project1)
+19) now you create one txt file in git project1 
+20) go to git bash type ls click enter (hear you will see created file)
+21) type git add (file names) in git bash and click enter (this command to add file to git)
+22) type git status (to check the file status)
+23) type (git commit -m "(committed message)" filename) in git bash and click enter (this command for commiting)(committed message is     like first commit,second commit like that if we are commiting same file again we need to chanage this command ike third commit)
+24) type (git push -u origin master) to our local code to github
+25) now one window will to enter our crendentials for the first time next time it wont ask 
+26) now your file will be stored in git repository
