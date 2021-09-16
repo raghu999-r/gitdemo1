@@ -1,0 +1,68 @@
+az ad sp create-for-rbac --name ServicePrincipalName
+
+az ad sp create-for-rbac --name AnsibleService
+
+output 
+{
+  appId c0f0b512-32e9-486d-a40e-211637b23632,
+  displayName AnsibleService,
+  name c0f0b512-32e9-486d-a40e-211637b23632,
+  password B.HmPYED4DBOnrgHDRLHHthlGFW3IZCE~v,
+  tenant 05f89aa4-19e8-4adb-acdc-845ff133b970
+}
+
+
+subscription id e4c57df6-0280-4f92-a58c-d99e8f29ed64,
+
+
+ssh -i private key path azuredemo@13.83.7.59
+
+ssh azuredemo@13.83.7.59
+
+to create directory in  ansible vm  mkdir ~.azuredemo1
+to  edit directory                  nano ~.azuredemo1credentials
+
+[default]
+
+subscription_id=e4c57df6-0280-4f92-a58c-d99e8f29ed64
+
+client_id=c0f0b512-32e9-486d-a40e-211637b23632
+
+secret=B.HmPYED4DBOnrgHDRLHHthlGFW3IZCE~v
+
+tenant=05f89aa4-19e8-4adb-acdc-845ff133b970
+
+JyxevGAYVO0rNghfFIMw18xJpLCUTt3Jxmhq2v4TVI azuredemo@ansibleazuredemo
+
+ssh-copy-id azuredemo@13.83.7.59
+
+
+cat ~.sshid_rsa
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAoKMFjxLg6bdOOCBTQ88Htou52dkpvsOlWPDuQVLKsu1n4ek
+4ao1JakGvT218FhZZWkWLgSwdbjxy4FvDLwbhVTk3I7yEFXnKePJeePpn8aqf2ac
+cKfjKjESoPdZ0td0w38Q7lTF5EY1IWiQ+K31GLd4jfcQ15HRmvUihZkVxzsLqvii
+BoSWXCBcHYztpw+qUEODf5HpMGnFe9P6SqqEYsdbFDMoOhlstS7lNX9MvsCstc3j
+0DfAVPoAaT5+fu0LvhalT2C21BHCK6iPgwVkZ00nDRWoCmJHN2KIm3J4Bnl3ilyi
+bbXmlU7+sr9zMVev3WieMeyyjL+fyJsTYAQIDAQABAoIBACIsTCRxybMusc8y
+4UPNqUBmXTVBA6Z3jJdtOeJfsIu1gpbhXIUeZX3bV2Y4TmuMeZnArbrfHauz5GR
+iYRWCCzHMKDTMBVhoXc1aG+oJbC9sZl8xHiwYQxnvD4zH9bOe9oUdN7QmU2s2
+CZE9wKRvc5APV8+wC6M87kkJgPp73ttFm5BeYTjUMKERwBVGZMVH6lbdyIDPoW
+Ph3Z+03xNQPF0GwCLWa77dazW0Jtc5kxJOoOzkbqRLtLtvSCLe1jOydmuf1ZgXDG
+sYrDRBaUVQbS8LdvMrgWCYWFSrsSMnvjoy5YK+pfXuVA7zS6b9PeHn0tBmS+hX
+K3XMedkCgYEAyw0CIAUTaDCE9Utfyltoq700g+8KbHhlRDrJOIzwPxVyfKAd7V
+YPqcA4q0ZMs1qvwmZ1BlkrI0Vj7QCfKYLJW2OBRInBlr4nT3F8pSt2vC1mQPFPAh
+gS4pkTbhRH2rhRmnP1K7kpMm6JeO5IjuHDzmHiKxCyxjJ4GNN8hSe38CgYEAyoaY
+pSAbp8DeYXLRShxq8aeS26rvVQV4HqYVOCLcEIcCDnzndOO0sBY2G3Vf5PGoM5WB
+LoNaAzmoxQ4uzwfsF2OzYBJ65ukmNU+k+c5sVlJZoB9NA0pCiuZZ2hRb0aXKGKpb
+swK92vLNiZVoAkO6KDrQ3VUy9CRtY20OZAbH8CgYEAifAPVoM8ONZlLGIE8+n
+BFQnXc1AzolHef9ZfQI6IBKnkOYdoebLONjkwBiJerqTXq3+A1kwzAuX7ySBX5
+IqidviEBZpHaeV+uEEpQwOwC0zPsDvRGPoSGlnCqvaWFpIjV1i204RD4KJ04Ymo
+ACTayvQUQ5vmzAq1TYTXi68CgYB1RydozpgqxAc3qDUiiBkUOZ6z0JJuiEVnpgr
+KgTGjWhje3GN09jqXkr7YzayBbfyHRGu0olE7oHo581dmisdnuiMUjc2DsnJL
+N38FfirozzeJ8DcYuMzPvXpurdOa9QylXbEUWgcuRjjPtG8vtAEM9jXTNkrrOqID
+11L3gQKBgQCdjDu1PnhG5b4NwE2UsqD57wfUzjU1Qw4gq5tb7qLXVTBDnvGRSLD6
+qQuZRwgz9EieKb2cKdF3x8ma+cw5WNOLT4Z6bs22PSh8N77uFx77g4CrGB
+8uv22doE2J+GYyzHuW5pwxAIZhwsFOv0lhmEvu7Sh281qK7L4biHEg==
+-----END RSA PRIVATE KEY-----
